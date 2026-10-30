@@ -1,0 +1,579 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="description" content="Carsten Gregory #18: Georgia-based sports car driver. Results, gallery and 2027 partnership opportunities.">
+<link rel="icon" href="logo.svg">
+<style>:root{padding-top:env(safe-area-inset-top);padding-bottom:env(safe-area-inset-bottom)}body{margin:0}[hidden]{display:none!important}</style>
+</head>
+<body>
+<title>Carsten Gregory Racing</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&display=swap">
+<style>
+/* Layout: black nav, B&W hero with signature, white story split, photo feed strip, full-bleed season banner, partner sections, black footer. One committed light look. */
+:root{
+  --ink:#0a0b0e; --paper:#ffffff; --mist:#f2f3f6; --line:#dfe2e8; --muted:#5d6168;
+  --blue:#4161B6; --blue-deep:#2c4a9c; --green:#37f714; --gray:#666a6d;
+  --wide:"Archivo","Arial Black","Helvetica Neue",Arial,sans-serif;
+  --body:"Archivo","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*{box-sizing:border-box}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+section[id]{scroll-margin-top:72px}
+#top{scroll-margin-top:400px}
+body{background:var(--paper);color:var(--ink);font:400 16px/1.65 var(--body)}
+img{display:block;max-width:100%}
+.wrap{max-width:1240px;margin:0 auto;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px))}
+h1,h2,h3,.wide{font-family:var(--wide);font-stretch:125%;font-weight:800;text-transform:uppercase;letter-spacing:.08em;line-height:1.05;margin:0;text-wrap:balance}
+h2{font-size:clamp(1.9rem,4.4vw,3.2rem)}
+.eyebrow{font:800 .72rem/1 var(--wide);font-stretch:125%;letter-spacing:.2em;text-transform:uppercase;color:var(--ink);margin:0 0 16px;display:flex;align-items:center;gap:10px}
+.eyebrow::before{content:"";width:22px;height:3px;background:var(--blue)}
+p{margin:0;max-width:60ch}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--blue);outline-offset:3px}
+.btn{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;font:800 .72rem/1 var(--wide);font-stretch:125%;letter-spacing:.14em;text-transform:uppercase;padding:15px 20px;border-radius:6px;text-decoration:none;border:0;cursor:pointer;transition:background .2s}
+.btn:hover{background:var(--blue)}
+.btn .arr{font-family:var(--body);font-size:1rem;line-height:0}
+.btn.light{background:#fff;color:var(--ink)}
+.btn.light:hover{background:var(--green)}
+
+/* nav */
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--ink)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--ink);color:#fff}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-block:14px}
+.logo{display:block;width:48px;filter:drop-shadow(0 0 0 transparent)}
+nav ul{display:flex;gap:30px;list-style:none;margin:0;padding:0}
+nav ul a{font:800 .72rem/1 var(--wide);font-stretch:125%;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:#fff;padding-block:6px;border-bottom:2px solid transparent}
+nav ul a:hover{border-color:var(--green)}
+@media (max-width:820px){nav ul{gap:16px}nav ul li.opt{display:none}}
+@media (max-width:520px){nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;overflow:hidden;background:#8f8f8f;aspect-ratio:2400/1288}
+.hero .photo{position:absolute;inset:0;width:100%;height:100%;max-width:none;object-fit:cover;object-position:0% 100%}
+.hero .sign{position:absolute;right:5%;top:6%;width:min(46%,600px);display:grid;justify-items:end}
+.hero .sign img.sig{width:100%;transform:rotate(-3deg)}
+.hero img.num{position:absolute;right:2.2%;bottom:3.5%;width:clamp(46px,6vw,96px);filter:drop-shadow(0 4px 10px rgba(0,0,0,.25))}
+.hero h1{position:absolute;left:-9999px}
+@media (prefers-reduced-motion:no-preference){
+  .hero .sig{animation:ink 1.4s cubic-bezier(.6,.1,.2,1) both;clip-path:inset(0 0 0 0)}
+  @keyframes ink{from{clip-path:inset(0 100% 0 0)}to{clip-path:inset(0 0 0 0)}}
+}
+@media (max-width:640px){
+  .hero .sign{right:3%;top:4%;width:50%}
+}
+
+/* story */
+.story{padding-block:96px}
+.story .wrap{display:grid;grid-template-columns:1fr 1fr;gap:64px;align-items:center}
+.story .wrap>*{min-width:0}
+.story h2{margin-bottom:26px}
+.story .text{display:grid;gap:16px;color:#2a2d33}
+.story .btn{justify-self:start;margin-top:10px}
+.story figure{margin:0;position:relative}
+.story figure img{width:100%;aspect-ratio:4/5;object-fit:cover;object-position:50% 40%;border-radius:10px}
+.story figure figcaption{position:absolute;left:16px;bottom:16px;background:var(--ink);color:#fff;font:800 .65rem/1 var(--wide);font-stretch:125%;letter-spacing:.16em;text-transform:uppercase;padding:9px 12px;border-radius:4px}
+@media (max-width:860px){.story .wrap{grid-template-columns:1fr;gap:40px}.story{padding-block:64px}}
+
+/* stats */
+.stats{background:var(--ink);color:#fff;padding-block:56px}
+.stats .wrap{display:grid;grid-template-columns:repeat(4,1fr);gap:0}
+.stat{padding:8px 28px;border-left:1px solid #2a2d35;display:grid;gap:10px;align-content:start}
+.stat:first-child{border-left:0;padding-left:0}
+.stat b{font:800 clamp(1.25rem,2.3vw,1.8rem)/1.1 var(--wide);text-transform:uppercase;font-stretch:125%;letter-spacing:.02em;color:#fff}
+.stat b em{font-style:normal;color:var(--green)}
+.stat span{font-size:.9rem;color:#b7bbc4;max-width:24ch}
+@media (max-width:860px){.stats .wrap{grid-template-columns:repeat(2,1fr);gap:28px 0}.stat:nth-child(3){border-left:0;padding-left:0}}
+@media (max-width:420px){.stats .wrap{grid-template-columns:1fr}.stat{border-left:0;padding-left:0}}
+
+/* feed */
+.feed{padding-block:88px 72px}
+.feed .head{display:flex;justify-content:space-between;align-items:end;gap:20px;flex-wrap:wrap;margin-bottom:32px}
+.feed .head h2{font-size:clamp(2rem,5vw,3.4rem)}
+.strip{display:grid;grid-auto-flow:column;grid-auto-columns:clamp(220px,24vw,320px);gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding-left:max(24px,env(safe-area-inset-left,0px));padding-right:max(24px,env(safe-area-inset-right,0px));padding-bottom:12px;scrollbar-width:thin}
+.strip figure{margin:0;scroll-snap-align:start;position:relative;overflow:hidden;border-radius:6px;background:var(--mist)}
+.strip img{width:100%;aspect-ratio:1;object-fit:cover;transition:transform .5s}
+.strip figure:hover img{transform:scale(1.04)}
+.strip figcaption{position:absolute;inset:auto 0 0 0;padding:28px 14px 12px;background:linear-gradient(transparent,rgba(0,0,0,.65));color:#fff;font:700 .78rem/1.3 var(--body)}
+
+/* season banner */
+.season{position:relative;min-height:clamp(340px,40vw,520px);display:grid;place-items:center;text-align:center;color:#fff;overflow:hidden}
+.season>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:55% 60%}
+.season::after{content:"";position:absolute;inset:0;background:rgba(10,11,14,.42)}
+.season .inner{position:relative;z-index:1;display:grid;justify-items:center;gap:20px;padding-block:48px}
+.season h2{font-size:clamp(1.9rem,5.6vw,4.2rem);letter-spacing:.14em;text-shadow:0 2px 24px rgba(0,0,0,.4)}
+.season h2 small{display:block;font-size:.42em;letter-spacing:.3em;margin-bottom:12px;color:var(--green)}
+.season p{color:#e9ecf2;max-width:46ch}
+
+/* partner */
+.partner{padding-block:96px;background:var(--mist)}
+.partner .intro{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:48px}
+.partner .intro>*{min-width:0}
+@media (max-width:860px){.partner .intro{grid-template-columns:1fr;gap:20px}.partner{padding-block:64px}}
+.partner h2 em{font-style:normal;color:var(--green);-webkit-text-stroke:2px var(--ink);paint-order:stroke fill}
+.why{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+.why div{background:#fff;border-radius:8px;padding:24px;display:grid;gap:10px;align-content:start}
+.why h3{font-size:.95rem;letter-spacing:.1em}
+.why p{font-size:.93rem;color:var(--muted)}
+@media (max-width:960px){.why{grid-template-columns:repeat(2,1fr)}}
+@media (max-width:520px){.why{grid-template-columns:1fr}}
+
+.place{margin-top:56px;display:grid;grid-template-columns:repeat(4,1fr);border-top:2px solid var(--ink)}
+.place div{padding:18px 18px 18px 0;border-bottom:1px solid var(--line);display:grid;gap:4px}
+.place b{font:800 .8rem/1.2 var(--wide);font-stretch:125%;letter-spacing:.1em;text-transform:uppercase}
+.place span{font-size:.88rem;color:var(--muted)}
+@media (max-width:860px){.place{grid-template-columns:repeat(2,1fr)}}
+
+.tiers{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px;align-items:start}
+.tier{background:#fff;border-radius:10px;padding:30px;display:grid;gap:18px;align-content:start;border:1px solid var(--line);transition:box-shadow .25s}
+.tier-card{perspective:1400px;cursor:pointer;border-radius:10px;transition:transform .25s cubic-bezier(.2,.8,.2,1);outline-offset:4px}
+.tier-card:hover{transform:scale(1.04);position:relative;z-index:1}
+.tier-inner{display:grid;align-items:start;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.3,.7,.2,1),height 1.1s cubic-bezier(.45,0,.2,1) .15s}
+.tier-card.flipped .tier-inner{transition:transform .7s cubic-bezier(.3,.7,.2,1),height .7s cubic-bezier(.3,.7,.2,1)}
+.tier-inner>.tier{grid-area:1/1;-webkit-backface-visibility:hidden;backface-visibility:hidden}
+.tier-inner>.tier.back{transform:rotateY(180deg);align-content:start}
+.tier-inner>.tier.front{grid-template-rows:auto auto auto 1fr;min-height:var(--fh,0px)}
+.tier-card:hover .tier{box-shadow:0 18px 40px rgba(10,11,14,.14)}
+.flip-hint{font:700 .6rem/1 var(--wide);font-stretch:125%;letter-spacing:.16em;text-transform:uppercase;color:var(--muted);align-self:end;margin-top:6px}
+.tier.feature .flip-hint{color:#8d929c}
+.tier .best{font-size:.92rem;color:var(--muted);max-width:none}
+.tier.feature .best{color:#b7bbc4}
+.tier .best b{color:inherit;font-weight:700}
+.tier-cta{justify-self:start;margin-top:4px}
+@media (prefers-reduced-motion:reduce){.tier-inner,.tier-card,.tier-card.flipped .tier-inner{transition:none}}
+@media (prefers-reduced-motion:reduce){.tier{transition:none}}
+.tier.feature{background:var(--ink);color:#fff;border-color:var(--ink)}
+.tier .tag{font:800 .65rem/1 var(--wide);font-stretch:125%;letter-spacing:.18em;text-transform:uppercase;color:var(--blue)}
+.tier.feature .tag{color:var(--green)}
+.tier h3{font-size:1.6rem}
+.tier ul{margin:0;padding:0;list-style:none;display:grid;gap:10px;font-size:.95rem}
+.tier li{padding-left:20px;position:relative}
+.tier li::before{content:"";position:absolute;left:0;top:.62em;width:10px;height:3px;background:var(--blue)}
+.tier.feature li::before{background:var(--green)}
+.note{margin-top:20px;color:var(--muted);font-size:.9rem}
+@media (max-width:860px){.tiers{grid-template-columns:1fr}}
+
+/* current partners */
+.current{padding-block:72px}
+.current .wrap{display:grid;grid-template-columns:1fr;gap:28px}
+.logos{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.logos div{border:1px solid var(--line);border-radius:8px;padding:18px 20px;display:grid;gap:6px;min-width:0;align-content:center}
+.logos b{font:800 .9rem/1.15 var(--wide);font-stretch:125%;letter-spacing:.1em;text-transform:uppercase}
+.logos span{font:500 .6rem/1.4 var(--wide);font-stretch:125%;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.logos .open{border:1px dashed #b9bfcc;border-radius:8px;padding:18px 20px;display:grid;gap:6px;min-width:0;align-content:center;text-decoration:none;color:inherit;transition:border-color .2s,background .2s}
+.logos .open:hover{border-style:solid;border-color:var(--blue);background:var(--mist)}
+.logos .open b{color:var(--blue);transition:color .2s}
+.logos .open:hover b{color:var(--blue-deep)}
+.logos a.co{border:1px solid var(--blue);border-radius:8px;display:grid;gap:6px;min-width:0;text-decoration:none;color:inherit;transition:border-color .2s,background .2s}
+.logos a.co:hover{border-color:var(--blue);background:var(--mist)}
+.logos a.co:hover b{color:var(--blue)}
+.logos div,.logos .open,.logos a.co{align-content:start;padding:22px 22px}
+@media (max-width:760px){.logos{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+/* contact + footer */
+.contact{background:var(--ink);color:#fff;padding-block:96px 72px;position:relative;overflow:hidden}
+.contact .wrap{display:grid;grid-template-columns:1.2fr 1fr;gap:48px;align-items:center;position:relative;z-index:1}
+.contact .wrap>*{min-width:0}
+.contact h2{font-size:clamp(2.2rem,5.6vw,4rem)}
+.contact h2 em{font-style:normal;color:var(--green)}
+.contact p{color:#b7bbc4;margin-top:18px}
+.contact .sig{position:absolute;inset:-3% -2%;width:104%;height:106%;max-width:none;object-fit:contain;opacity:.08;transform:rotate(-3deg);pointer-events:none}
+.mini{display:grid;grid-template-columns:1fr 1fr;gap:14px;background:#15171d;border:1px solid #2a2d35;border-radius:12px;padding:22px}
+.mini .full{grid-column:1/-1}
+.mini .field textarea{min-height:110px}
+.mini-actions{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.mini-sent{display:grid;gap:12px;border-top:1px solid #2a2d35;padding-top:14px}
+.mini-sent p{color:#d3d8e3;margin:0;font-size:.92rem;max-width:none}
+.mini-sent .row{display:flex;flex-wrap:wrap;gap:10px}
+.mini .err{color:#ff8a8a;font-size:.9rem}
+@media (max-width:520px){.mini{grid-template-columns:1fr}}
+.mailbox{display:grid;gap:12px;background:#15171d;border:1px solid #2a2d35;border-radius:10px;padding:24px}
+.mailbox label{font:800 .65rem/1 var(--wide);font-stretch:125%;letter-spacing:.18em;text-transform:uppercase;color:#8d929c}
+.mailbox code{font:700 clamp(1rem,2.4vw,1.25rem)/1.3 var(--body);user-select:all;overflow-wrap:anywhere;color:#fff}
+.mailbox .row{display:flex;flex-wrap:wrap;gap:10px;margin-top:6px}
+@media (max-width:860px){.contact .wrap{grid-template-columns:1fr}}
+
+.marquee{background:var(--paper);padding-block:34px;overflow:hidden;border-top:1px solid var(--line)}
+.marquee .label{text-align:center;font:800 .82rem/1 var(--wide);font-stretch:125%;letter-spacing:.24em;text-transform:uppercase;color:var(--muted);margin:0 auto 24px;max-width:none}
+.track{display:flex;width:max-content;animation:scroll 28s linear infinite}
+.set{display:flex;align-items:center;gap:96px;padding-right:96px}
+.set img{height:34px;width:auto;max-width:none}
+.set img.tall{height:84px}
+.set img.mid{height:58px}
+@keyframes scroll{to{transform:translateX(-50%)}}
+@media (prefers-reduced-motion:reduce){.track{animation:none;width:auto;justify-content:center}.track .set+.set{display:none}}
+
+/* inquiry page */
+.inquire{position:fixed;inset:0;z-index:50;background:var(--ink);color:#fff;overflow-y:auto;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+.inquire .wrap{max-width:860px;padding-block:28px 72px}
+.inquire .top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:48px}
+.inquire .top img{width:52px}
+.inquire h2{font-size:clamp(2rem,6vw,3.4rem)}
+.inquire h2 em{font-style:normal;color:var(--green)}
+.inquire .lead{color:#b7bbc4;margin:18px 0 36px}
+.form{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.form .full{grid-column:1/-1}
+.field{display:grid;gap:8px;min-width:0}
+.field label{font:800 .65rem/1 var(--wide);font-stretch:125%;letter-spacing:.18em;text-transform:uppercase;color:#8d929c}
+.field input,.field textarea,.field select{width:100%;font:400 1rem/1.5 var(--body);color:#fff;background:#15171d;border:1px solid #2a2d35;border-radius:8px;padding:14px 16px}
+.field textarea{min-height:160px;resize:vertical}
+.field input:focus,.field textarea:focus,.field select:focus{outline:2px solid var(--blue);outline-offset:0;border-color:var(--blue)}
+.form .actions{grid-column:1/-1;display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-top:6px}
+.form .err{color:#ff8a8a;font-size:.9rem}
+.sent{margin-top:28px;background:#15171d;border:1px solid #2a2d35;border-radius:10px;padding:22px;display:grid;gap:14px}
+.sent p{color:#d3d8e3;max-width:none}
+.sent pre{margin:0;white-space:pre-wrap;overflow-wrap:anywhere;font:400 .9rem/1.6 var(--body);color:#b7bbc4;background:#0e1015;border-radius:6px;padding:14px}
+.sent .row{display:flex;flex-wrap:wrap;gap:10px}
+@media (max-width:600px){.form{grid-template-columns:1fr}}
+.float-social{position:fixed;z-index:60;right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));display:grid;gap:8px;transition:opacity .25s,transform .25s}
+.float-social a{display:grid;place-items:center;width:42px;height:42px;border-radius:50%;background:var(--ink);color:#fff;border:1px solid rgba(255,255,255,.18);box-shadow:0 6px 18px rgba(0,0,0,.25);transition:background .2s,color .2s}
+.float-social a:hover{background:var(--green);color:var(--ink)}
+.float-social svg{width:19px;height:19px;fill:currentColor}
+.float-social.away{opacity:0;transform:translateY(8px);pointer-events:none}
+.hero img.num{right:calc(2.2% + 64px) !important}
+.totop{font:800 .65rem/1 var(--wide);font-stretch:125%;letter-spacing:.16em;text-transform:uppercase;text-decoration:none;color:#fff;background:var(--blue);border:1px solid var(--blue);border-radius:6px;padding:13px 18px;transition:background .2s,color .2s,border-color .2s}
+.totop:hover{background:#fff;color:var(--ink);border-color:#fff}
+.inq-bg{position:fixed;inset:0;z-index:0;display:grid;grid-template-columns:1fr 1.4fr 1fr;gap:2px;background:var(--ink)}
+.inq-bg{overflow:hidden}
+.inq-bg img{width:100%;height:100%;object-fit:cover;max-width:none;filter:grayscale(1) blur(4px);transform:scale(1.06)}
+.inq-bg::after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(10,11,14,.68),rgba(10,11,14,.88) 30%,rgba(10,11,14,.88) 70%,rgba(10,11,14,.68))}
+.inquire .wrap{position:relative;z-index:1}
+@media (max-width:640px){.inq-bg{grid-template-columns:1fr 1fr;grid-template-rows:1fr 1fr}.inq-bg img:nth-child(2){grid-column:1/-1;grid-row:1}}
+footer{background:var(--ink);color:#fff;border-top:1px solid #22252c;padding-block:28px}
+footer .wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));align-items:center;gap:20px}
+footer .wrap>.brand{justify-self:start}
+footer .wrap>.totop{justify-self:center}
+footer .wrap>.socials{justify-self:end}
+@media (max-width:640px){footer .wrap{grid-template-columns:1fr;justify-items:center}footer .wrap>.brand,footer .wrap>.totop,footer .wrap>.socials{justify-self:center}}
+footer .brand{display:flex;align-items:center;gap:14px}
+footer .brand img{width:42px}
+footer .brand span{font:800 .8rem/1.3 var(--wide);font-stretch:125%;letter-spacing:.16em;text-transform:uppercase}
+footer .brand small{display:block;font:400 .72rem/1.4 var(--body);letter-spacing:0;text-transform:none;color:#8d929c}
+.socials{display:flex;flex-wrap:wrap;gap:8px}
+.socials a{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#fff;color:var(--ink);transition:background .2s,color .2s}
+.socials a:hover{background:var(--green)}
+.socials svg{width:20px;height:20px;fill:currentColor}
+</style>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" aria-label="Carsten Gregory home"><img class="logo" src="logo.svg" alt="CG18 logo"></a>
+    <ul>
+      <li><a href="#story">My Story</a></li>
+      <li class="opt"><a href="#season">Schedule</a></li>
+      <li><a href="#partner">Partner</a></li>
+      <li class="opt"><a href="#gallery">Gallery</a></li>
+    </ul>
+    <a class="btn light" href="#inquire">Contact</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <h1>Carsten Gregory #18</h1>
+  <img class="photo" src="hero-car.jpg" alt="Carsten Gregory fastening his helmet before a session">
+  <div class="sign">
+    <img class="sig" src="sig-dark.png" alt="Carsten Gregory signature">
+  </div>
+  <img class="num" src="logo.svg" alt="">
+</header>
+
+<section class="story" id="story">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow">About me</p>
+      <h2>My Story</h2>
+      <div class="text">
+        <p>I started racing go-karts at 14. From 14 to 17 I moved up through KA100 Junior, KA100 Senior, X30 Senior and KZ shifter karts, winning races in every class and championships in X30 and KZ.</p>
+        <p>To make the jump to cars, I spent the off-season working to fund my own Spec Miata, then built it at home in just under two months. In its first season that home-built car won 4 of the 8 races I entered, set the Spec Miata Toyo (SMT) track record at Road Atlanta, and took the HSR SSC Group 3 championship.</p>
+        <p>Then came a setback. My MX-5 Cup car was damaged in a fire, and I spent the next off-season and most of the following year rebuilding it from the ground up.</p>
+        <p>In 2026 I've focused on building partnerships and funding, with the goal of returning to the track full time in 2027.</p>
+      </div>
+      <a class="btn" href="#partner" style="margin-top:28px">Partner with me</a>
+    </div>
+    <figure>
+      <img src="spec-miata.jpg" alt="Carsten kneeling beside his home-built #18 Spec Miata in the paddock">
+      <figcaption>Home-built #18 Spec Miata</figcaption>
+    </figure>
+  </div>
+</section>
+
+<section class="stats" aria-label="Career highlights">
+  <div class="wrap">
+    <div class="stat"><b>50<em>%</em> Win Rate</b><span>Race wins in the home-built Spec Miata's first season</span></div>
+    <div class="stat"><b>Road Atlanta <em>Track Record</em></b><span>Spec Miata Toyo (SMT) track record at Road Atlanta</span></div>
+    <div class="stat"><b><em>Multi</em>-Time Karting Champion</b><span>Karting champion in X30 and KZ shifter</span></div>
+    <div class="stat"><b>HSR <em>Champion</em></b><span>HSR SSC Group 3 champion in the home-built Spec Miata</span></div>
+  </div>
+</section>
+
+<section class="feed" id="gallery">
+  <div class="wrap head">
+    <h2>Gallery</h2>
+    <a class="btn" href="https://www.instagram.com/carstengregory18" target="_blank" rel="noopener">@carstengregory18</a>
+  </div>
+  <div class="strip" tabindex="0" aria-label="Photo gallery, scroll sideways">
+    <figure><img src="podium.jpg" alt="Carsten on the HSR podium at Road Atlanta holding a trophy" loading="lazy"></figure>
+    <figure><img src="racing.jpg" alt="White #18 Spec Miata racing in a pack" loading="lazy"></figure>
+    <figure><img src="in-car.jpg" alt="Carsten smiling from the cockpit of a race car" loading="lazy"></figure>
+    <figure><img src="on-track.jpg" alt="Black #18 MX-5 Cup car on track" loading="lazy"></figure>
+    <figure><img src="portrait.jpg" alt="Carsten in race suit under a paddock tent" loading="lazy"></figure>
+    <figure><img src="climb-in.jpg" alt="Carsten climbing into the MX-5 Cup car" loading="lazy"></figure>
+    <figure><img src="paddock.jpg" alt="Carsten talking with a photographer on the grid at Road Atlanta" loading="lazy"></figure>
+    <figure><img src="grid-walk.jpg" alt="Carsten on the grid with his crew" loading="lazy"></figure>
+  </div>
+</section>
+
+<section class="season" id="season">
+  <img src="on-track.jpg" alt="" loading="lazy">
+  <div class="inner wrap">
+    <h2><small>CG18's</small>2027 Season</h2>
+    <p>Full-time return planned for 2027. The schedule goes up here once it's set.</p>
+    <a class="btn light" href="https://www.instagram.com/carstengregory18" target="_blank" rel="noopener">Follow along</a>
+  </div>
+</section>
+
+<section class="partner" id="partner">
+  <div class="wrap">
+    <div class="intro">
+      <div>
+        <p class="eyebrow">Partnerships</p>
+        <h2>Join the <em>#18</em> Team</h2>
+      </div>
+      <p class="muted">As a Business Management student at Georgia College &amp; State University in the Pre-Law Cohort, I bring three years of experience under practicing business attorneys to every racing partnership. Partners get a driver who treats their sponsorship as a business relationship, with clear deliverables and reporting.</p>
+    </div>
+    <div class="why">
+      <div><h3>Proven results</h3><p>Race wins, championships and a Road Atlanta track record behind the brand.</p></div>
+      <div><h3>Built, not bought</h3><p>A home-built car and a fire rebuild. A story fans and media follow.</p></div>
+      <div><h3>Year-round content</h3><p>Instagram, TikTok and YouTube between race weekends, plus sim racing streams.</p></div>
+      <div><h3>Reported value</h3><p>Photos, reach and engagement delivered to you after every event.</p></div>
+    </div>
+
+
+    <div class="tiers">
+      <div class="tier-card" tabindex="0" role="button" aria-pressed="false" aria-label="Supporter tier, show details">
+        <div class="tier-inner">
+          <div class="tier front">
+            <span class="tag">Product partner</span>
+            <h3>Supporter</h3>
+            <ul><li>Product or service for content</li><li>Review on Instagram, TikTok and YouTube</li><li>Logo on sim rig and website</li><li>Social tags all season</li></ul>
+            <span class="flip-hint">Click for details</span>
+          </div>
+          <div class="tier back" aria-hidden="true">
+            <span class="tag">Supporter details</span>
+            <p class="best"><b>Best for:</b> Sim racing, gear and lifestyle brands with a product to put in front of a racing audience.</p>
+            <ul><li>Dedicated review or unboxing video for each product</li><li>In-use posts and stories across all three platforms</li><li>Logo on the sim rig during streams and sim content</li><li>Logo on this site and in the partner strip</li><li>Product-based: no cash commitment required</li></ul>
+            <a class="btn tier-cta" href="#inquire" data-level="Supporter (product partner)">Inquire about Supporter</a>
+          </div>
+        </div>
+      </div>
+      <div class="tier-card feature" tabindex="0" role="button" aria-pressed="false" aria-label="Associate tier, show details">
+        <div class="tier-inner">
+          <div class="tier front feature">
+            <span class="tag">Most popular</span>
+            <h3>Associate</h3>
+            <ul><li>Logo on car and suit</li><li>Dedicated monthly content</li><li>Post-event report with photos and reach</li><li>Hospitality at select events</li></ul>
+            <span class="flip-hint">Click for details</span>
+          </div>
+          <div class="tier back feature" aria-hidden="true">
+            <span class="tag">Associate details</span>
+            <p class="best"><b>Best for:</b> Brands that want real on-track visibility and steady content without the full title commitment.</p>
+            <ul><li>Decal on the doors or rear wing of the #18</li><li>Logo on the driver suit</li><li>At least one dedicated post or reel each month</li><li>Recap report after every event with photos, reach and engagement</li><li>Paddock and hospitality passes at select events</li></ul>
+            <a class="btn light tier-cta" href="#inquire" data-level="Associate">Inquire about Associate</a>
+          </div>
+        </div>
+      </div>
+      <div class="tier-card" tabindex="0" role="button" aria-pressed="false" aria-label="Primary tier, show details">
+        <div class="tier-inner">
+          <div class="tier front">
+            <span class="tag">Title partner</span>
+            <h3>Primary</h3>
+            <ul><li>Hood and full livery integration</li><li>Brand in car and team name</li><li>Appearances and custom campaigns</li><li>Category exclusivity</li></ul>
+            <span class="flip-hint">Click for details</span>
+          </div>
+          <div class="tier back" aria-hidden="true">
+            <span class="tag">Primary details</span>
+            <p class="best"><b>Best for:</b> A lead partner who wants the car and the whole 2027 program built around their brand.</p>
+            <ul><li>Hood placement and input on the full livery design</li><li>Naming rights for the car and team</li><li>Prime placement on the suit and helmet</li><li>Custom content campaigns and in-person appearances</li><li>Category exclusivity and first right of renewal</li></ul>
+            <a class="btn tier-cta" href="#inquire" data-level="Primary (title partner)">Inquire about Primary</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <p class="note">Packages are built around your goals. Pricing on request.</p>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <img class="sig" src="sig-white.png" alt="">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow" style="color:#fff">Contact</p>
+      <h2>Let's build <em>2027</em> together</h2>
+      <p>Send your brand and goals. I'll reply with my media kit and a package built for you.</p>
+    </div>
+    <form class="mini" id="mini-form" novalidate>
+      <div class="field"><label for="mini-company">Company</label><input id="mini-company" required autocomplete="organization"></div>
+      <div class="field"><label for="mini-email">Your email</label><input id="mini-email" type="email" required autocomplete="email"></div>
+      <div class="field full"><label for="mini-msg">Message</label><textarea id="mini-msg" required placeholder="Your brand and what you're looking for"></textarea></div>
+      <div class="full mini-actions"><button class="btn light" type="submit">Send</button><span class="err" id="mini-err" role="alert"></span></div>
+      <div class="full mini-sent" id="mini-sent" hidden>
+        <p>Your email app should open with this ready to send. If not, copy it and email <b>carstengregory@gmail.com</b>.</p>
+        <div class="row"><button class="btn light" type="button" id="mini-copy">Copy message</button><button class="btn" type="button" id="mini-copy-mail" style="background:#2a2d35">Copy email</button></div>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="current">
+  <div class="wrap">
+    <div><p class="eyebrow">Partners</p><h2 style="font-size:1.6rem">My Partners</h2></div>
+    <div class="logos">
+      <a class="co" href="https://www.simsonn.com/" target="_blank" rel="noopener"><b>Simsonn</b><span>Sim racing hardware</span></a>
+      <a class="co" href="https://thegregorylawgroup.com/" target="_blank" rel="noopener"><b>Gregory Law Group</b><span>Attorneys at law</span></a>
+      <a class="co" href="https://furniturefromhighpoint.com/" target="_blank" rel="noopener"><b>Furniture From High Point</b><span>Quality furniture at a discount price</span></a>
+      <a class="open" href="#inquire"><b>Your brand</b><span>2027 slots open · Inquire</span></a>
+    </div>
+  </div>
+</section>
+
+
+<section class="marquee" aria-label="Partners">
+  <p class="label">Proudly supported by</p>
+  <div class="track">
+    <div class="set"><img src="simsonn.png" alt="Simsonn"><img class="mid" src="gregory-law.png" alt="Gregory Law"><img class="tall" src="ffhp.png" alt="Furniture From High Point"><img src="simsonn.png" alt=""><img class="mid" src="gregory-law.png" alt=""><img class="tall" src="ffhp.png" alt=""></div>
+    <div class="set" aria-hidden="true"><img src="simsonn.png" alt=""><img class="mid" src="gregory-law.png" alt=""><img class="tall" src="ffhp.png" alt=""><img src="simsonn.png" alt=""><img class="mid" src="gregory-law.png" alt=""><img class="tall" src="ffhp.png" alt=""></div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="brand"><img src="logo.svg" alt=""><span>Carsten Gregory<small>© 2026 Carsten Gregory Racing</small></span></div>
+    <a class="totop" href="#top">Back to top</a>
+    <div class="socials">
+      <a href="https://www.instagram.com/carstengregory18" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+      <a href="https://www.tiktok.com/@carstengregory18" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      <a href="https://www.youtube.com/@carstengregory18" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+    </div>
+  </div>
+</footer>
+
+<div class="float-social" id="float-social" role="navigation" aria-label="Social links">
+      <a href="https://www.instagram.com/carstengregory18" target="_blank" rel="noopener" aria-label="Instagram"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7.0301.084c-1.2768.0602-2.1487.264-2.911.5634-.7888.3075-1.4575.72-2.1228 1.3877-.6652.6677-1.075 1.3368-1.3802 2.127-.2954.7638-.4956 1.6365-.552 2.914-.0564 1.2775-.0689 1.6882-.0626 4.947.0062 3.2586.0206 3.6671.0825 4.9473.061 1.2765.264 2.1482.5635 2.9107.308.7889.72 1.4573 1.388 2.1228.6679.6655 1.3365 1.0743 2.1285 1.38.7632.295 1.6361.4961 2.9134.552 1.2773.056 1.6884.069 4.9462.0627 3.2578-.0062 3.668-.0207 4.9478-.0814 1.28-.0607 2.147-.2652 2.9098-.5633.7889-.3086 1.4578-.72 2.1228-1.3881.665-.6682 1.0745-1.3378 1.3795-2.1284.2957-.7632.4966-1.636.552-2.9124.056-1.2809.0692-1.6898.063-4.948-.0063-3.2583-.021-3.6668-.0817-4.9465-.0607-1.2797-.264-2.1487-.5633-2.9117-.3084-.7889-.72-1.4568-1.3876-2.1228C21.2982 1.33 20.628.9208 19.8378.6165 19.074.321 18.2017.1197 16.9244.0645 15.6471.0093 15.236-.005 11.977.0014 8.718.0076 8.31.0215 7.0301.0839m.1402 21.6932c-1.17-.0509-1.8053-.2453-2.2287-.408-.5606-.216-.96-.4771-1.3819-.895-.422-.4178-.6811-.8186-.9-1.378-.1644-.4234-.3624-1.058-.4171-2.228-.0595-1.2645-.072-1.6442-.079-4.848-.007-3.2037.0053-3.583.0607-4.848.05-1.169.2456-1.805.408-2.2282.216-.5613.4762-.96.895-1.3816.4188-.4217.8184-.6814 1.3783-.9003.423-.1651 1.0575-.3614 2.227-.4171 1.2655-.06 1.6447-.072 4.848-.079 3.2033-.007 3.5835.005 4.8495.0608 1.169.0508 1.8053.2445 2.228.408.5608.216.96.4754 1.3816.895.4217.4194.6816.8176.9005 1.3787.1653.4217.3617 1.056.4169 2.2263.0602 1.2655.0739 1.645.0796 4.848.0058 3.203-.0055 3.5834-.061 4.848-.051 1.17-.245 1.8055-.408 2.2294-.216.5604-.4763.96-.8954 1.3814-.419.4215-.8181.6811-1.3783.9-.4224.1649-1.0577.3617-2.2262.4174-1.2656.0595-1.6448.072-4.8493.079-3.2045.007-3.5825-.006-4.848-.0608M16.953 5.5864A1.44 1.44 0 1 0 18.39 4.144a1.44 1.44 0 0 0-1.437 1.4424M5.8385 12.012c.0067 3.4032 2.7706 6.1557 6.173 6.1493 3.4026-.0065 6.157-2.7701 6.1506-6.1733-.0065-3.4032-2.771-6.1565-6.174-6.1498-3.403.0067-6.156 2.771-6.1496 6.1738M8 12.0077a4 4 0 1 1 4.008 3.9921A3.9996 3.9996 0 0 1 8 12.0077"/></svg></a>
+      <a href="https://www.tiktok.com/@carstengregory18" target="_blank" rel="noopener" aria-label="TikTok"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z"/></svg></a>
+      <a href="https://www.youtube.com/@carstengregory18" target="_blank" rel="noopener" aria-label="YouTube"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M23.498 6.186a3.016 3.016 0 0 0-2.122-2.136C19.505 3.545 12 3.545 12 3.545s-7.505 0-9.377.505A3.017 3.017 0 0 0 .502 6.186C0 8.07 0 12 0 12s0 3.93.502 5.814a3.016 3.016 0 0 0 2.122 2.136c1.871.505 9.376.505 9.376.505s7.505 0 9.377-.505a3.015 3.015 0 0 0 2.122-2.136C24 15.93 24 12 24 12s0-3.93-.502-5.814zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg></a>
+</div>
+
+<section class="inquire" id="inquire" hidden aria-labelledby="inq-title">
+  <div class="inq-bg" aria-hidden="true"><img src="inq-cockpit.jpg" alt="" style="object-position:40% 45%"><img src="inq-track.jpg" alt="" style="object-position:58% 55%"><img src="inq-podium.jpg" alt="" style="object-position:50% 30%"></div>
+  <div class="wrap">
+    <div class="top">
+      <a href="#top" aria-label="Back to site"><img src="logo.svg" alt="CG18 logo"></a>
+      <a class="btn light" href="#partner">Back to site</a>
+    </div>
+    <p class="eyebrow" style="color:#fff">Partnership inquiry</p>
+    <h2 id="inq-title">Join the <em>#18</em> team</h2>
+    <p class="lead">Tell me about your company and what you're looking for. I'll reply with my media kit and a package built around your goals.</p>
+    <form class="form" id="inq-form" novalidate>
+      <div class="field"><label for="inq-company">Company</label><input id="inq-company" name="company" required autocomplete="organization"></div>
+      <div class="field"><label for="inq-name">Your name</label><input id="inq-name" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="inq-email">Your email</label><input id="inq-email" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="inq-level">Interested in</label>
+        <select id="inq-level" name="level"><option>Not sure yet</option><option>Supporter (product partner)</option><option>Associate</option><option>Primary (title partner)</option></select></div>
+      <div class="field full"><label for="inq-msg">Message</label><textarea id="inq-msg" name="message" required placeholder="Your brand, goals, and anything I should know"></textarea></div>
+      <div class="actions"><button class="btn light" type="submit">Send an Inquiry</button><span class="err" id="inq-err" role="alert"></span></div>
+    </form>
+    <div class="sent" id="inq-sent" hidden>
+      <p>Your email app should open with this message ready to send. If it didn't open, copy the message and email it to <b>carstengregory@gmail.com</b>.</p>
+      <pre id="inq-preview"></pre>
+      <div class="row"><button class="btn light" type="button" id="inq-copy">Copy message</button><button class="btn" type="button" id="inq-copy-mail" style="background:#2a2d35">Copy email address</button></div>
+    </div>
+  </div>
+</section>
+
+<script>
+/* Paste your Web3Forms access key between the quotes. Get one free at web3forms.com (enter carstengregory@gmail.com). */
+var WEB3FORMS_KEY = "";
+function sendInquiry(fields, done){
+  if(!WEB3FORMS_KEY){done(false);return}
+  fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
+    body:JSON.stringify(Object.assign({access_key:WEB3FORMS_KEY,from_name:"carstengregory.com",subject:"Partnership inquiry: "+fields.Company,replyto:fields.Email},fields))})
+  .then(function(r){return r.json()}).then(function(j){done(!!j.success)},function(){done(false)});
+}
+
+(function(){
+  var TO='carstengregory@gmail.com', view=document.getElementById('inquire');
+  function route(){var on=location.hash==='#inquire';view.hidden=!on;document.documentElement.style.overflow=on?'hidden':'';if(on){view.scrollTop=0;document.getElementById('inq-company').focus({preventScroll:true})}}
+  window.addEventListener('hashchange',route);route();
+  function copy(text,btn,label){function ok(){btn.textContent='Copied';setTimeout(function(){btn.textContent=label},1800)}
+    try{navigator.clipboard.writeText(text).then(ok,function(){btn.textContent='Copy failed, select the text'})}catch(e){btn.textContent='Copy failed, select the text'}}
+  var f=document.getElementById('inq-form'),err=document.getElementById('inq-err'),body='';
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var v=function(id){return document.getElementById(id).value.trim()};
+    var c=v('inq-company'),n=v('inq-name'),m=v('inq-email'),msg=v('inq-msg'),lvl=v('inq-level');
+    if(!c||!n||!m||!msg){err.textContent='Fill in company, name, email and message.';return}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)){err.textContent='Enter a valid email address so Carsten can reply.';return}
+    err.textContent='';
+    body='Company: '+c+'\nName: '+n+'\nEmail: '+m+'\nInterested in: '+lvl+'\n\n'+msg;
+    var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending…';
+    sendInquiry({Company:c,Name:n,Email:m,'Interested in':lvl,Message:msg},function(ok){
+      btn.disabled=false;btn.innerHTML='Send an Inquiry';
+      var s=document.getElementById('inq-sent');s.hidden=false;
+      if(ok){s.querySelector('p').textContent='Sent. Thanks, '+n+'. Carsten will reply to '+m+' soon.';document.getElementById('inq-preview').hidden=true;s.querySelector('.row').hidden=true;f.reset()}
+      else{s.querySelector('p').innerHTML='The message couldn\u2019t be sent from here. Copy it below and email it to <b>carstengregory@gmail.com</b>.';document.getElementById('inq-preview').hidden=false;document.getElementById('inq-preview').textContent=body;s.querySelector('.row').hidden=false}
+    });
+  });
+  document.getElementById('inq-copy').addEventListener('click',function(){copy(body,this,'Copy message')});
+  document.getElementById('inq-copy-mail').addEventListener('click',function(){copy(TO,this,'Copy email address')});
+})();
+(function(){
+  var TO='carstengregory@gmail.com',f=document.getElementById('mini-form'),err=document.getElementById('mini-err'),body='';
+  function copy(t,b,l){try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent=l},1800)},function(){b.textContent='Copy failed'})}catch(e){b.textContent='Copy failed'}}
+  f.addEventListener('submit',function(e){
+    e.preventDefault();
+    var c=document.getElementById('mini-company').value.trim(),m=document.getElementById('mini-email').value.trim(),msg=document.getElementById('mini-msg').value.trim();
+    if(!c||!m||!msg){err.textContent='Fill in all three fields.';return}
+    if(!/^[^@\s]+@[^@\s]+\.[^@\s]+$/.test(m)){err.textContent='Enter a valid email so Carsten can reply.';return}
+    err.textContent='';
+    body='Company: '+c+'\nEmail: '+m+'\n\n'+msg;
+    var btn=f.querySelector('button[type=submit]');btn.disabled=true;btn.textContent='Sending…';
+    sendInquiry({Company:c,Email:m,Message:msg},function(ok){
+      btn.disabled=false;btn.innerHTML='Send';
+      var s=document.getElementById('mini-sent');s.hidden=false;
+      if(ok){s.querySelector('p').textContent='Sent. Carsten will reply to '+m+' soon.';s.querySelector('.row').hidden=true;f.reset()}
+      else{s.querySelector('p').innerHTML='The message couldn\u2019t be sent from here. Copy it and email <b>carstengregory@gmail.com</b>.';s.querySelector('.row').hidden=false}
+    });
+  });
+  document.getElementById('mini-copy').addEventListener('click',function(){copy(body,this,'Copy message')});
+  document.getElementById('mini-copy-mail').addEventListener('click',function(){copy(TO,this,'Copy email')});
+})();
+(function(){var f=document.getElementById('float-social'),ft=document.querySelector('footer');
+if(!('IntersectionObserver' in window)||!ft)return;
+new IntersectionObserver(function(e){f.classList.toggle('away',e[0].isIntersecting)}).observe(ft)})();
+(function(){var c=document.getElementById('contact'),s=c&&c.querySelector('.sig');if(!s)return;
+if(window.matchMedia&&matchMedia('(prefers-reduced-motion: reduce)').matches)return;
+var q=false;function upd(){q=false;var r=c.getBoundingClientRect(),vh=window.innerHeight;
+var p=0.42*(vh-r.top)/r.height;p=Math.max(0,Math.min(1,p));
+s.style.clipPath='inset(0 '+((1-p)*100).toFixed(2)+'% 0 0)'}
+function on(){if(!q){q=true;requestAnimationFrame(upd)}}
+window.addEventListener('scroll',on,{passive:true});window.addEventListener('resize',on);upd()})();
+(function(){var wrap=document.querySelector('.tiers');if(!wrap)return;var cards=[].slice.call(wrap.querySelectorAll('.tier-card'));
+function size(){wrap.style.removeProperty('--fh');var fh=0;
+  cards.forEach(function(c){fh=Math.max(fh,c.querySelector('.front').offsetHeight)});
+  wrap.style.setProperty('--fh',fh+'px');
+  cards.forEach(function(c){var i=c.querySelector('.tier-inner');i.style.height=(c.classList.contains('flipped')?Math.max(fh,c.querySelector('.back').offsetHeight):fh)+'px'})}
+function set(c,f){if(c.classList.contains('flipped')!==f){c._a=(c._a||0)+180;c.querySelector('.tier-inner').style.transform='rotateY('+c._a+'deg)'}c.classList.toggle('flipped',f);c.setAttribute('aria-pressed',f);c.querySelector('.front').setAttribute('aria-hidden',f);c.querySelector('.back').setAttribute('aria-hidden',!f)}
+function flip(c){var f=!c.classList.contains('flipped');cards.forEach(function(o){if(o!==c)set(o,false)});set(c,f);size()}
+cards.forEach(function(c){
+  c.addEventListener('click',function(e){if(e.target.closest('.tier-cta'))return;flip(c)});
+  c.addEventListener('keydown',function(e){if(e.target!==c)return;if(e.key==='Enter'||e.key===' '){e.preventDefault();flip(c)}});
+  var cta=c.querySelector('.tier-cta');cta.addEventListener('click',function(){var s=document.getElementById('inq-level');if(s)s.value=cta.dataset.level});
+});
+size();window.addEventListener('resize',size);if(document.fonts&&document.fonts.ready)document.fonts.ready.then(size);})();
+</script>
+
+</body>
+</html>
