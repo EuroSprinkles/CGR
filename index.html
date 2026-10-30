@@ -498,11 +498,11 @@ footer .brand small{display:block;font:400 .72rem/1.4 var(--body);letter-spacing
 
 <script>
 /* Paste your Web3Forms access key between the quotes. Get one free at web3forms.com (enter carstengregory@gmail.com). */
-var WEB3FORMS_KEY = "";
+var WEB3FORMS_KEY = "3d0421d1-fe68-4889-bc0f-23c5cdaf48f2";
 function sendInquiry(fields, done){
   if(!WEB3FORMS_KEY){done(false);return}
   fetch("https://api.web3forms.com/submit",{method:"POST",headers:{"Content-Type":"application/json",Accept:"application/json"},
-    body:JSON.stringify(Object.assign({access_key:WEB3FORMS_KEY,from_name:"carstengregory.com",subject:"Partnership inquiry: "+fields.Company,replyto:fields.Email},fields))})
+    body:JSON.stringify(Object.assign({access_key:WEB3FORMS_KEY,from_name:"carstengregoryracing.com",subject:"Partnership inquiry: "+fields.Company,replyto:fields.Email},fields))})
   .then(function(r){return r.json()}).then(function(j){done(!!j.success)},function(){done(false)});
 }
 
